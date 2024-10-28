@@ -35,7 +35,8 @@ jobs:
       - name: Install Bun
         run: |
           curl -fsSL https://bun.sh/install | bash
-          export PATH="$HOME/.bun/bin:$PATH"
+          echo 'export PATH="$HOME/.bun/bin:$PATH"' >> $GITHUB_ENV
+        shell: bash
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -49,9 +50,7 @@ jobs:
           path: |
             .next/cache
             ~/.bun
-          # Generate a new cache whenever packages or source files change.
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/bun.lockb') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
-          # If source files changed but packages didn't, rebuild from a prior cache.
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/bun.lockb') }}-
 
@@ -77,4 +76,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
 
