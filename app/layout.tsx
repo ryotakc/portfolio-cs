@@ -6,6 +6,8 @@ import { cn } from "@/lib/utils";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { ModeToggle } from "@/components/mode-toggle";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -54,6 +56,18 @@ export default function RootLayout({
                 </div>
               </Link>
             </h1>
+            <ul className="flex gap-1">
+              {navItems.map((item) => (
+                <li key={item.label} className="hidden sm:block hover:scale-105 transition-transform duration-300">
+                  <Button variant="ghost" asChild>
+                    <Link href={item.href}>{item.label}</Link>
+                  </Button>
+                </li>
+              ))}
+              <div className="hidden sm:block ml-1">
+                <ModeToggle />
+              </div>
+            </ul>
           </header>
           <main className="dark:bg-black bg-white dark:bg-opacity-20 bg-opacity-20 relative flex justify-center min-h-screen">
             {children}
