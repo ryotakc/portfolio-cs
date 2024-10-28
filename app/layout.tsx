@@ -9,6 +9,9 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/mode-toggle";
 
+import nextConfig from "../next.config";
+const BASE_PATH = nextConfig.basePath || "";
+
 const inter = Inter({ subsets: ["latin"] });
 
 const geistSans = localFont({
@@ -54,7 +57,7 @@ export default function RootLayout({
             <h1 className="font-bold text-2xl hover:scale-110 transition-transform duration-300">
               <Link href="/">
                 <div className="flex">
-                  <Image src="/logo.jpg" alt="profile" width={32} height={32} className="rounded-md" />
+                  <Image src="${BASE_PATH}/logo.jpg" alt="profile" width={32} height={32} className="rounded-md" />
                   <span className="ml-2">leo</span>
                 </div>
               </Link>
