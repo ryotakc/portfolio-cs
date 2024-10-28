@@ -1,35 +1,30 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+// import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { cn } from "@/lib/utils";
+// import { cn } from "@/lib/utils";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/mode-toggle";
+import { navItems } from "./navItems"; // import
 
 import nextConfig from "../next.config";
 const BASE_PATH = nextConfig.basePath || "";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
-
-export const navItems = [
-  { label: "Work", href: "/work" },
-  { label: "Photography", href: "/photography" },
-  { label: "Contact", href: "/contact" },
-]
+// const geistSans = localFont({
+//   src: "./fonts/GeistVF.woff",
+//   variable: "--font-geist-sans",
+//   weight: "100 900",
+// });
+// const geistMono = localFont({
+//   src: "./fonts/GeistMonoVF.woff",
+//   variable: "--font-geist-mono",
+//   weight: "100 900",
+// });
 
 export const metadata: Metadata = {
   title: {
@@ -46,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" suppressHydrationWarning>
-      <body className={`${inter.className} dark:bg-black bg-white  dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2]`}>
+      <body className={`${inter.className} dark:bg-black bg-white dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2]`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -57,7 +52,7 @@ export default function RootLayout({
             <h1 className="font-bold text-2xl hover:scale-110 transition-transform duration-300">
               <Link href="/">
                 <div className="flex">
-                  <Image src="${BASE_PATH}/logo.jpg" alt="profile" width={32} height={32} className="rounded-md" />
+                  <Image src={`${BASE_PATH}/logo.jpg`} alt="profile" width={32} height={32} className="rounded-md" />
                   <span className="ml-2">leo</span>
                 </div>
               </Link>
