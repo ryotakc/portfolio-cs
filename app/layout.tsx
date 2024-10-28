@@ -4,6 +4,8 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
 import { Inter } from "next/font/google";
+import Link from "next/link";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,6 +39,16 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <header className="container h-16 flex items-center border-b justify-between text-primary">
+            <h1 className="font-bold text-2xl hover:scale-110 transition-transform duration-300">
+              <Link href="/">
+                <div className="flex">
+                  <Image src="/logo.jpg" alt="profile" width={32} height={32} className="rounded-md" />
+                  <span className="ml-2">leo</span>
+                </div>
+              </Link>
+            </h1>
+          </header>
           <main className="dark:bg-black bg-white dark:bg-opacity-20 bg-opacity-20 relative flex justify-center min-h-screen">
             {children}
           </main>
