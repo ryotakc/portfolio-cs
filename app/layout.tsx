@@ -67,9 +67,9 @@ export default function RootLayout({
                   </Button>
                 </li>
               ))}
-              <div className="hidden sm:block ml-1">
+              <li className="hidden sm:block ml-1">
                 <ModeToggle />
-              </div>
+              </li>
             </ul>
           </header>
           <main className="dark:bg-black bg-white dark:bg-opacity-20 bg-opacity-20 relative flex justify-center min-h-screen">
