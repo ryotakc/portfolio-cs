@@ -1,9 +1,10 @@
+import { TimelineWork } from "./components/images-slider-work";
 
 
 export default function Work() {
     return (
-        <div>
-        <h1>Work</h1>
+        <div className="container">
+            <TimelineWork />
         </div>
     );
 }
