@@ -2,6 +2,7 @@ import HoverBorderGradient from "@/components/hover-border-gradient";
 import PageTitle from "@/components/page-title";
 import { FlipWords } from "@/components/ui/flip-words";
 import { SiInstagram } from "@icons-pack/react-simple-icons";
+import { ImagesSliderAni } from "./components/image-slider-ani";
 
 
 export default function Photography() {
@@ -26,6 +27,9 @@ export default function Photography() {
                 </div>  
                 </PageTitle>
             </div> 
+            <div className="py-10">
+                <ImagesSliderAni /> 
+            </div>
         </div>
     );
 }
