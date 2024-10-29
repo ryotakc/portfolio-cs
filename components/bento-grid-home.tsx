@@ -4,55 +4,54 @@ import React, { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { IconBrandYoutubeFilled } from "@tabler/icons-react";
 import Link from "next/link";
 
 import nextConfig from "../next.config";
+import { YoutubeDial } from "./youtube-player";
 const BASE_PATH = nextConfig.basePath || "";
 
 export function LeoSection() {
   const features = [
     {
-      title: "Track issues effectively",
+      title: "Designing and Developing",
       description:
-        "Track and manage your project issues with ease using our intuitive interface.",
+        "Designing and developing websites and web applications with the latest technologies like React, Next.js, Tailwind CSS, and more.",
       skeleton: <SkeletonOne />,
       className:
         "col-span-1 lg:col-span-4 border-b lg:border-r dark:border-neutral-800",
     },
     {
-      title: "Capture pictures with AI",
+      title: "Photography and Retouching",
       description:
-        "Capture stunning photos effortlessly using our advanced AI technology.",
+        "Photography and retouching photos with Adobe Lightroom Classic. I love to capture beautiful moments and create beautiful images.",
       skeleton: <SkeletonTwo />,
       className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
     },
     {
-      title: "Watch our AI on YouTube",
+      title: "Watching Tech YouTube",
       description:
-        "Whether it's you or Tyler Durden, you can get to know about our product on YouTube",
+        "I love to watch tech YouTube channels like typecraft, DevOps Toolbox, and more. I love to learn new things and keep up with the latest technologies.",
       skeleton: <SkeletonThree />,
       className:
         "col-span-1 lg:col-span-3 lg:border-r dark:border-neutral-800",
     },
     {
-      title: "Deploy in seconds",
+      title: "Using Linux",
       description:
-        "With our blazing fast, state of the art, cutting edge, we are so back cloud services (read AWS) - you can deploy your model in seconds.",
-      skeleton: <SkeletonThree />,
+        "I love to use Linux as my daily driver. I use Ubuntu and Arch Linux. I love to customize my desktop and use the terminal.",
+      skeleton: <SkeletonFour />,
       className: "col-span-1 lg:col-span-3 border-b lg:border-none",
     },
   ];
 
   return (
-    <div className="relative z-20 py-10 lg:py-40 max-w-7xl mx-auto">
+    <div className="relative z-20 pt-10 lg:py-20 max-w-7xl mx-auto">
       <div className="px-8">
         <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
-          Packed with thousands of features
+          My Skills and Hobbies
         </h4>
         <p className="text-sm lg:text-base max-w-2xl my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
-          From Image generation to video generation, Everything AI has APIs for
-          literally everything. It can even create this website copy for you.
+            Here are some of my favorite things and skills that I love to do.
         </p>
       </div>
 
@@ -195,25 +194,32 @@ export const SkeletonOne = () => {
   };
   
 
+
 export const SkeletonThree = () => {
-  return (
-    <Link
-      href="https://www.youtube.com/watch?v=RPa3_AD1_Vs"
-      target="__blank"
-      className="relative flex gap-10 h-full group/image"
-    >
-      <div className="w-full mx-auto bg-transparent dark:bg-transparent group h-full">
-        <div className="flex flex-1 w-full h-full flex-col space-y-2 relative">
-          <IconBrandYoutubeFilled className="h-20 w-20 absolute z-10 inset-0 text-red-500 m-auto" />
-          <Image
-            src="https://assets.aceternity.com/fireship.jpg"
-            alt="header"
-            width={800}
-            height={800}
-            className="h-full w-full aspect-square object-cover object-center rounded-sm blur-none group-hover/image:blur-md transition-all duration-200"
-          />
+return (
+    <div className="mt-6">
+       <YoutubeDial /> 
+    </div>
+    
+);
+};
+
+
+export const SkeletonFour = () => {
+    return (
+      <div className="relative flex py-2 px-2 gap-4 h-full">
+        <div className="w-full p-3 mx-auto shadow-2xl group h-full">
+          <div className="flex flex-1 w-full h-full flex-col space-y-2">
+            <Image
+              src={`${BASE_PATH}/work/Arch.JPG`}
+              alt="header"
+              width={180}
+              height={120}
+              className="w-full aspect-[3/2] object-cover rounded-md blur-none"
+            />
+          </div>
         </div>
       </div>
-    </Link>
-  );
-};
+    );
+  };
+  
