@@ -21,7 +21,7 @@ export default function Home() {
             Hi! Welcome to <span className="font-semibold" color="text-primary/50">Ryota Kato</span>&apos;s Portfolio! <br />
             I&apos;m a web developer and photographer based in Vancouver, Canada. I&apos;m a passionate coder and photographer. I love to create and capture beautiful things. Feel free to reach out to me! I&apos;m looking forward to hearing from you! 
           </p>
-          {/* <div className="flex space-x-3 py-5">
+          <div className="flex space-x-3 py-5">
             <HoverBorderGradient link="https://github.com/ryotakc">
               <SiGithub />
               <span>GitHub</span>
@@ -30,7 +30,7 @@ export default function Home() {
               <FileCheck />
               <span>CV</span>
             </HoverBorderGradient>
-          </div>   */}
+          </div>  
         </PageTitle>
 
       </div>    
