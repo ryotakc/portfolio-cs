@@ -127,71 +127,73 @@ export const SkeletonOne = () => {
   
   
 
-export const SkeletonTwo = () => {
-  const images = [
-    "/photograph/pic1.jpg",
-    "/photograph/pic2.jpg",
-    "/photograph/pic3.jpg",
-    "/photograph/pic4.jpg",
-    "/photograph/pic5.jpg",
-    "/photograph/pic6.jpg",
-  ];
-
-  const [randomRotations, setRandomRotations] = useState<number[]>([]);
-
-  useEffect(() => {
-    const rotations = images.map(() => Math.random() * 20 - 10);
-    setRandomRotations(rotations);
-  }, []);
-
-  return (
-    <div className="relative flex flex-col items-start p-8 gap-10 h-full overflow-hidden">
-      <div className="flex flex-row -ml-20">
-        {images.map((image, idx) => (
-          <motion.div
-            key={`images-first-${idx}`}
-            style={{
-              rotate: randomRotations[idx] || 0,
-            }}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1.1 }}
-            className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
-          >
-            <Image
-              src={`${BASE_PATH}${image}`}
-              alt="bali images"
-              width="500"
-              height="500"
-              className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0"
-            />
-          </motion.div>
-        ))}
+  export const SkeletonTwo = () => {
+    const images = [
+      "/photograph/pic1.jpg",
+      "/photograph/pic2.jpg",
+      "/photograph/pic3.jpg",
+      "/photograph/pic4.jpg",
+      "/photograph/pic5.jpg",
+      "/photograph/pic6.jpg",
+    ];
+  
+    const [randomRotations, setRandomRotations] = useState<number[]>([]);
+  
+    useEffect(() => {
+      const rotations = images.map(() => Math.random() * 20 - 10);
+      setRandomRotations(rotations);
+    }, []);
+  
+    return (
+      <div className="relative flex flex-col items-start p-8 gap-10 h-full overflow-hidden">
+        {/* Row 1 */}
+        <div className="flex flex-row -ml-20">
+          {images.map((image, idx) => (
+            <motion.div
+              key={`images-first-${idx}`}
+              style={{
+                rotate: randomRotations[idx] || 0,
+              }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 1.1 }}
+              className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
+            >
+              <Image
+                src={`${BASE_PATH}${image}`}
+                alt="bali images"
+                width="500"
+                height="500"
+                className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0"
+              />
+            </motion.div>
+          ))}
+        </div>
+        {/* Row 2 (Reversed order) */}
+        <div className="flex flex-row">
+          {images.slice().reverse().map((image, idx) => (
+            <motion.div
+              key={`images-second-${idx}`}
+              style={{
+                rotate: randomRotations[idx] || 0,
+              }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 1.1 }}
+              className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
+            >
+              <Image
+                src={`${BASE_PATH}${image}`}
+                alt="bali images"
+                width="500"
+                height="500"
+                className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0"
+              />
+            </motion.div>
+          ))}
+        </div>
       </div>
-      // Row 2
-      <div className="flex flex-row">
-        {images.map((image, idx) => (
-          <motion.div
-            key={`images-first-${idx}`}
-            style={{
-              rotate: randomRotations[idx] || 0,
-            }}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1.1 }}
-            className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
-          >
-            <Image
-              src={`${BASE_PATH}${image}`}
-              alt="bali images"
-              width="500"
-              height="500"
-              className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0"
-            />
-          </motion.div>
-        ))}
-      </div>
-    </div>
-  );
-};
+    );
+  };
+  
 
 export const SkeletonThree = () => {
   return (
