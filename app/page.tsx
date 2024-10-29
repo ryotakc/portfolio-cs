@@ -17,10 +17,10 @@ export default function Home() {
           <br className="sm:hidden"/>
           <FlipWords words={words} className="text-primary/50" /> <br />
           </div>    
-          {/* <p className="text-neutral-600 dark:text-neutral-400 pt-4">
+          <p className="text-neutral-600 dark:text-neutral-400 pt-4">
             Hi! Welcome to <span className="font-semibold" color="text-primary/50">Ryota Kato</span>&apos;s Portfolio! <br />
             I&apos;m a web developer and photographer based in Vancouver, Canada. I&apos;m a passionate coder and photographer. I love to create and capture beautiful things. Feel free to reach out to me! I&apos;m looking forward to hearing from you! 
-          </p> */}
+          </p>
           {/* <div className="flex space-x-3 py-5">
             <HoverBorderGradient link="https://github.com/ryotakc">
               <SiGithub />
