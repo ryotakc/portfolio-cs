@@ -1,3 +1,4 @@
+import { LeoSection } from "@/components/bento-grid-home";
 import HoverBorderGradient from "@/components/hover-border-gradient";
 import PageTitle from "@/components/page-title";
 import { FlipWords } from "@/components/ui/flip-words";
@@ -33,6 +34,8 @@ export default function Home() {
           </div>  
         </PageTitle>
 
+
+        <LeoSection />
       </div>   
     </div>
 
