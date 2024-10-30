@@ -211,7 +211,7 @@ export const SkeletonFour = () => {
         <div className="w-full p-3 mx-auto shadow-2xl group h-full">
           <div className="flex flex-1 w-full h-full flex-col space-y-2">
             <Image
-              src={`${BASE_PATH}/work/Arch.JPG`}
+              src={`${BASE_PATH}/work/Linux/Arch1.JPG`}
               alt="header"
               width={180}
               height={120}
