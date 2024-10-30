@@ -109,7 +109,7 @@ const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
 export const SkeletonOne = () => {
     return (
       <div className="relative flex py-2 px-2 gap-4 h-full">
-        <div className="w-full p-3 mx-auto shadow-2xl group h-full">
+        <div className="w-full p-3 mx-auto group h-full">
           <div className="flex flex-1 w-full h-full flex-col space-y-2">
             <Image
               src={`${BASE_PATH}/work/Portfolio-first/project1.jpeg`}
@@ -208,7 +208,7 @@ return (
 export const SkeletonFour = () => {
     return (
       <div className="relative flex py-2 px-2 gap-4 h-full">
-        <div className="w-full p-3 mx-auto shadow-2xl group h-full">
+        <div className="w-full p-3 mx-auto group h-full">
           <div className="flex flex-1 w-full h-full flex-col space-y-2">
             <Image
               src={`${BASE_PATH}/work/Linux/Arch1.JPG`}
