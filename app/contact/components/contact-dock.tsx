@@ -15,7 +15,7 @@ import {
     SiInstagram,
     SiX,
  } from "@icons-pack/react-simple-icons";
-import { Mail } from "lucide-react";
+import { File, Mail } from "lucide-react";
 
 export function ContactDock() {
   const links = [
@@ -37,7 +37,7 @@ export function ContactDock() {
     {
       title: "CV",
       icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <File className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "https://cv-leo.vercel.app/en",
     },
