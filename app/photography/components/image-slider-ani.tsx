@@ -3,15 +3,17 @@ import { ImagesSlider } from "@/components/ui/images-slider";
 import { motion } from "framer-motion";
 import React from "react";
 
+import nextConfig from "../../../next.config";
+const BASE_PATH = nextConfig.basePath || "";
 
 export function ImagesSliderAni() {
   const images = [
-    "/photograph/pic1.jpg",
-    "/photograph/pic2.jpg",
-    "/photograph/pic3.jpg",
-    "/photograph/pic4.jpg",
-    "/photograph/pic5.jpg",
-    "/photograph/pic6.jpg",
+    `${BASE_PATH}/photograph/pic1.jpg`,
+    `${BASE_PATH}/photograph/pic2.jpg`,
+    `${BASE_PATH}/photograph/pic3.jpg`,
+    `${BASE_PATH}/photograph/pic4.jpg`,
+    `${BASE_PATH}/photograph/pic5.jpg`,
+    `${BASE_PATH}/photograph/pic6.jpg`,
   ];
   return (
     <ImagesSlider className="h-[25rem] lg:h-[50rem] rounded-md" images={images}>
