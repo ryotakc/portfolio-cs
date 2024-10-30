@@ -71,13 +71,13 @@ export default function RootLayout({
               </li>
             </ul>
           </header>
-          <main className="dark:bg-black bg-white dark:bg-opacity-20 bg-opacity-20 relative flex justify-center min-h-screen">
+          <main className="dark:bg-black bg-white dark:bg-opacity-20 bg-opacity-20 relative flex justify-center min-h-screen ">
             {children}
           </main>
 
-          <div>
+          <footer>
             <Footer />
-          </div>
+          </footer>
         </ThemeProvider>
       </body>
     </html>

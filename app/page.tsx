@@ -1,4 +1,5 @@
 import { LeoSection } from "@/components/bento-grid-home";
+import Footer from "@/components/footer";
 import HoverBorderGradient from "@/components/hover-border-gradient";
 import PageTitle from "@/components/page-title";
 import { FlipWords } from "@/components/ui/flip-words";
@@ -11,7 +12,7 @@ export default function Home() {
   return (
 
     <div className="container" >
-      <div className="h-[20rem] pt-20">
+      <div className="h-full pt-20">
         <PageTitle>
           <div className="font-bold mb-2 lg:text-6xl text-4xl mx-auto text-neutral-600 dark:text-neutral-400">
           Ryota Loves <span> </span>
@@ -36,7 +37,8 @@ export default function Home() {
 
 
         <LeoSection />
-      </div>   
+      </div>  
+
     </div>
 
   );
