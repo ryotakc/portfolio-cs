@@ -11,6 +11,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 import { navItems } from "./navItems"; // import
 
 import nextConfig from "../next.config";
+import Footer from "@/components/footer";
 const BASE_PATH = nextConfig.basePath || "";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -73,6 +74,10 @@ export default function RootLayout({
           <main className="dark:bg-black bg-white dark:bg-opacity-20 bg-opacity-20 relative flex justify-center min-h-screen">
             {children}
           </main>
+
+          <div>
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>
