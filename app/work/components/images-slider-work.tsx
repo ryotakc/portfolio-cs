@@ -3,10 +3,15 @@ import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 import { Badge } from "@/components/ui/badge";
 
+import nextConfig from "../../../next.config";
+import Link from "next/link";
+import { Link2 } from "lucide-react";
+const BASE_PATH = nextConfig.basePath || "";
+
 export function TimelineWork() {
   const data = [
     {
-      title: "New Portfolio",
+      title: "New Portfolio 2024",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
@@ -56,12 +61,17 @@ export function TimelineWork() {
       title: "2024 Fall",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-2">
             Started to use Arch Linux and Ubuntu as my daily driver. Try some dotfiles and rice my desktop.
+          </p>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+            I'm using NeoVim as my code editor and Hyprland for Arch Linux and Omakub for Ubuntu as my main desktop environment.
           </p>
           <div className="mb-6">
               <Badge variant="outline">Arch Linux</Badge>
+              <Badge variant="outline">Hyprland</Badge>
               <Badge variant="outline">Ubuntu</Badge>
+              <Badge variant="outline">Omakub</Badge>
               <Badge variant="outline">NeoVim</Badge>
           </div>
           <div className="grid grid-cols-2 gap-4">
@@ -101,11 +111,11 @@ export function TimelineWork() {
       title: "2024 Summer",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-2">
             Started to learn React, Next.js, and Tailwind CSS. Build some projects and templates.
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Launched first personal portfolio website using Next.js, Tailwind CSS, Shadcn/UI, and Vercel.
+            Launched first personal portfolio website and CV using Next.js, Tailwind CSS, Shadcn/UI, and Vercel.
           </p>
           <div className="mb-6">
               <Badge variant="outline">Next.js</Badge>
@@ -147,28 +157,41 @@ export function TimelineWork() {
       ),
     },
     {
-      title: "Changelog",
+      title: "Challenge on RecursionCS",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            Deployed 5 new components on Aceternity today
+            Started to learn Computer Science and Web Development on RecursionCS japanese CS online learning service. I'm learning HTML, CSS, and Computer Science.
           </p>
-          <div className="mb-8">
+          <Link href="https://recursionist.io/" className="flex gap-1">
+            <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">Recursion</p>
+            <Link2 width={15} height={15} className="items-center justify-center"/>
+          </Link>
+          <div className="mb-4">
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Card grid component
+              ✅ Intro to HTML & CSS
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Startup template Aceternity
+              ✅ Intro to Computer Science
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Random file upload lol
+              ✅ Intermediate to Computer Science
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Himesh Reshammiya Music CD
+              ✅ Advanced to Computer Science
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Salman Bhai Fan Club registrations open
+              ✅ Git Basics
             </div>
+          </div>
+          <div className="mb-6">
+              <Badge variant="outline">HTML</Badge>
+              <Badge variant="outline">CSS</Badge>
+              <Badge variant="outline">C++</Badge>
+              <Badge variant="outline">Java</Badge>
+              <Badge variant="outline">JavaScript</Badge>
+              <Badge variant="outline">Git</Badge>
+              <Badge variant="outline">GitHub</Badge>
           </div>
           <div className="grid grid-cols-2 gap-4">
             <Image
@@ -205,7 +228,7 @@ export function TimelineWork() {
     },
   ];
   return (
-    <div className="w-full">
+    <div className="w-full mb-80">
       <Timeline data={data} />
     </div>
   );
