@@ -14,9 +14,9 @@ export default function Home() {
       <div className="h-full pt-20 mb-4">
         <PageTitle>
           <div className="font-bold mb-2 lg:text-6xl text-4xl mx-auto text-neutral-600 dark:text-neutral-400">
-          Ryota Loves <span> </span>
+          Ryota Loves 
           <br className="sm:hidden"/>
-          <FlipWords words={words} className="text-primary/50" /> <br />
+          <FlipWords words={words} className="text-primary/50"  /> <br />
           </div>    
           <p className="text-neutral-600 dark:text-neutral-400 pt-6">
             Hi! Welcome to <span className="text-xl font-semibold text-blue-400"> Ryota Kato</span>&apos;s Portfolio! <br />
