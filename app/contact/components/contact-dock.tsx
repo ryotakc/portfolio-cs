@@ -32,7 +32,7 @@ export function ContactDock() {
       icon: (
         <SiGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://www.github.com/ryotakc",
     },
     {
       title: "CV",
@@ -61,7 +61,7 @@ export function ContactDock() {
       icon: (
         <SiX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://www.x.com/leo_rkc",
     },
   ];
   return (
