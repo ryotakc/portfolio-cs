@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 
 import nextConfig from "../../../next.config";
 import Link from "next/link";
-import { Link2 } from "lucide-react";
+import { ArrowUpRight, Link2 } from "lucide-react";
 const BASE_PATH = nextConfig.basePath || "";
 
 export function TimelineWork() {
@@ -117,6 +117,17 @@ export function TimelineWork() {
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
             Launched first personal portfolio website and CV using Next.js, Tailwind CSS, Shadcn/UI, and Vercel.
           </p>
+          <div className="flex gap-3">
+            <Link href="https://leok.vercel.app" className="flex gap-1 underline">
+              <p className="text-blue-500 dark:text-neutral-600 text-xs md:text-sm font-normal mb-4">Portfolio</p>
+              <ArrowUpRight width={15} height={15} className="items-center justify-center"/>
+            </Link>      
+            <Link href="https://cv-leo.vercel.app" className="flex gap-1 underline">
+              <p className="text-blue-500 dark:text-blue-600 text-xs md:text-sm font-normal mb-4">CV</p>
+              <ArrowUpRight width={15} height={15} className="items-center justify-center"/>
+            </Link>     
+          </div>
+
           <div className="mb-6">
               <Badge variant="outline">Next.js</Badge>
               <Badge variant="outline">Tailwind CSS</Badge>
@@ -163,8 +174,8 @@ export function TimelineWork() {
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
             Started to learn Computer Science and Web Development on RecursionCS japanese CS online learning service. I'm learning HTML, CSS, and Computer Science.
           </p>
-          <Link href="https://recursionist.io/" className="flex gap-1">
-            <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">Recursion</p>
+          <Link href="https://recursionist.io/" className="flex gap-1 underline">
+            <p className="text-blue-500 dark:text-blue-600 text-xs md:text-sm font-normal mb-4">Recursion</p>
             <Link2 width={15} height={15} className="items-center justify-center"/>
           </Link>
           <div className="mb-4">
