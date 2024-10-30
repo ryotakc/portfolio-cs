@@ -125,7 +125,7 @@ export function TimelineWork() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src={`${BASE_PATH}/work/Portfolio-first/project1.webp`}
+              src={`${BASE_PATH}/work/Portfolio-first/project1.jpeg`}
               alt="hero template"
               width={500}
               height={500}
