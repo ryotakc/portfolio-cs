@@ -112,7 +112,7 @@ export const SkeletonOne = () => {
         <div className="w-full p-3 mx-auto shadow-2xl group h-full">
           <div className="flex flex-1 w-full h-full flex-col space-y-2">
             <Image
-              src={`${BASE_PATH}/work/project1.webp`}
+              src={`${BASE_PATH}/work/Portfolio-first/project1.jpeg`}
               alt="header"
               width={180}
               height={120}
