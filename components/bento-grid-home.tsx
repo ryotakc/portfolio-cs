@@ -6,9 +6,9 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-import nextConfig from "../next.config";
+// import nextConfig from "../next.config";
 import { YoutubeDial } from "./youtube-player";
-const BASE_PATH = nextConfig.basePath || "";
+// const BASE_PATH = nextConfig.basePath || "";
 
 export function LeoSection() {
   const features = [
@@ -112,10 +112,10 @@ export const SkeletonOne = () => {
         <div className="w-full p-3 mx-auto group h-full">
           <div className="flex flex-1 w-full h-full flex-col space-y-2">
             <Image
-              src={`${BASE_PATH}/work/Portfolio-first/project1.jpeg`}
+              src="/work/Portfolio-first/project1.jpeg"
               alt="header"
-              width={180}
-              height={120}
+              width={720}
+              height={480}
               className="w-full aspect-[3/2] object-cover rounded-md blur-none"
             />
           </div>
@@ -158,7 +158,7 @@ export const SkeletonOne = () => {
               className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
             >
               <Image
-                src={`${BASE_PATH}${image}`}
+                src={image}
                 alt="bali images"
                 width="500"
                 height="500"
@@ -180,7 +180,7 @@ export const SkeletonOne = () => {
               className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
             >
               <Image
-                src={`${BASE_PATH}${image}`}
+                src={image}
                 alt="bali images"
                 width="500"
                 height="500"
@@ -211,10 +211,10 @@ export const SkeletonFour = () => {
         <div className="w-full p-3 mx-auto group h-full">
           <div className="flex flex-1 w-full h-full flex-col space-y-2">
             <Image
-              src={`${BASE_PATH}/work/Linux/Arch1.JPG`}
+              src="/work/Linux/Arch1.JPG"
               alt="header"
-              width={180}
-              height={120}
+              width={720}
+              height={480}
               className="w-full aspect-[3/2] object-cover rounded-md blur-none"
             />
           </div>
