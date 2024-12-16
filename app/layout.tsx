@@ -12,7 +12,7 @@ import { navItems } from "./navItems"; // import
 
 import nextConfig from "../next.config";
 import Footer from "@/components/footer";
-const BASE_PATH = nextConfig.basePath || "";
+// const BASE_PATH = nextConfig.basePath || "";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -53,7 +53,7 @@ export default function RootLayout({
             <h1 className="font-bold text-2xl hover:scale-110 transition-transform duration-300">
               <Link href="/">
                 <div className="flex">
-                  <Image src={`${BASE_PATH}/logo.jpg`} alt="profile" width={32} height={32} className="rounded-md" />
+                  <Image src="/logo.jpg" alt="profile" width={32} height={32} className="rounded-md" />
                   <span className="ml-2">leo</span>
                 </div>
               </Link>
