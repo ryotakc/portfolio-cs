@@ -3,7 +3,7 @@ import { ImagesSlider } from "@/components/ui/images-slider";
 import { motion } from "framer-motion";
 import React from "react";
 
-import nextConfig from "../../../next.config";
+// import nextConfig from "../../../next.config";
 // const BASE_PATH = nextConfig.basePath || "";
 
 export function ImagesSliderAni() {

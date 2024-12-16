@@ -3,7 +3,7 @@ import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 import { Badge } from "@/components/ui/badge";
 
-import nextConfig from "../../../next.config";
+// import nextConfig from "../../../next.config";
 import Link from "next/link";
 import { ArrowUpRight, Link2 } from "lucide-react";
 // const BASE_PATH = nextConfig.basePath || "";

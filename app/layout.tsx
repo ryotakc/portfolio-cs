@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/mode-toggle";
 import { navItems } from "./navItems"; // import
 
-import nextConfig from "../next.config";
+// import nextConfig from "../next.config";
 import Footer from "@/components/footer";
 // const BASE_PATH = nextConfig.basePath || "";
 
