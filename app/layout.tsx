@@ -16,6 +16,7 @@ import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
+
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
 //   variable: "--font-geist-sans",
