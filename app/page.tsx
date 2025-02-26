@@ -2,6 +2,7 @@ import { LeoSection } from "@/components/bento-grid-home";
 import HoverBorderGradient from "@/components/hover-border-gradient";
 import PageTitle from "@/components/page-title";
 import { TerminalDemo } from "@/components/terminal-ui";
+import { Card } from "@/components/ui/card";
 import { FlipWords } from "@/components/ui/flip-words";
 import { SiGithub } from "@icons-pack/react-simple-icons";
 import { FileCheck } from "lucide-react";
@@ -35,8 +36,9 @@ export default function Home() {
           </div>  
         </PageTitle>
 
-        <div className="h-[410px]">
+        <div className="flex h-[410px] gap-x-14">
           <TerminalDemo />
+          <Card className="w-full text-center text-gray-500">Coming Soon...! </Card>
         </div>
 
         <LeoSection />
