@@ -1,5 +1,6 @@
 import { LeoSection } from "@/components/bento-grid-home";
 import HoverBorderGradient from "@/components/hover-border-gradient";
+import LogoCloud from "@/components/logo-cloud";
 import PageTitle from "@/components/page-title";
 import { TerminalDemo } from "@/components/terminal-ui";
 import { Card } from "@/components/ui/card";
@@ -38,7 +39,9 @@ export default function Home() {
 
         <div className="flex h-[410px] gap-x-14">
           <TerminalDemo />
-          <Card className="w-full text-center text-gray-500">Coming Soon...! </Card>
+          <div className="w-full max-w-screen-lg mx-auto overflow-hidden">
+            <LogoCloud />
+          </div>
         </div>
 
         <LeoSection />

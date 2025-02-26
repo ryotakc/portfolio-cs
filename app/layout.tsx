@@ -12,6 +12,7 @@ import { navItems } from "./navItems"; // import
 
 // import nextConfig from "../next.config";
 import Footer from "@/components/footer";
+import TwoColumnFooter from "@/components/footer";
 // const BASE_PATH = nextConfig.basePath || "";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -77,7 +78,7 @@ export default function RootLayout({
           </main>
 
           <div>
-            <Footer />
+            <TwoColumnFooter />
           </div>
         </ThemeProvider>
       </body>
