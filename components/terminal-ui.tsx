@@ -51,7 +51,7 @@ import { AnimatedSpan, Terminal, TypingAnimation } from "./magicui/terminal";
           Success! Skill set validation completed.
         </TypingAnimation>
   
-        <TypingAnimation delay={7000} className="text-muted-foreground">
+        <TypingAnimation delay={9000} className="text-muted-foreground">
           Leo is ready to start developing!
         </TypingAnimation>
       </Terminal>
