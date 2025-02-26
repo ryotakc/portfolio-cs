@@ -22,6 +22,14 @@ export function TimelineWork() {
               <p className="text-blue-500 dark:text-neutral-600 text-xs md:text-sm font-normal mb-4">RNA</p>
               <ArrowUpRight width={15} height={15} className="items-center justify-center"/>
             </Link>      
+            <Link href="https://github.com/CMPT-276-FALL-2024/project-03-rivers" className="flex gap-1 underline">
+              <p className="text-blue-500 dark:text-neutral-600 text-xs md:text-sm font-normal mb-4">Project Repo</p>
+              <ArrowUpRight width={15} height={15} className="items-center justify-center"/>
+            </Link>      
+            <Link href="https://www.youtube.com/watch?v=fx3ccu59D98&t=4s&ab_channel=Leo" className="flex gap-1 underline">
+              <p className="text-blue-500 dark:text-neutral-600 text-xs md:text-sm font-normal mb-4">Demo Video</p>
+              <ArrowUpRight width={15} height={15} className="items-center justify-center"/>
+            </Link>      
          </div>
 
           <div className="mb-6">
