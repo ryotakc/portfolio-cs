@@ -15,8 +15,15 @@ export function TimelineWork() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Build and launched new personal Portfolio website using Next.js, Tailwind CSS, and GitHub Pages.
+            Build and launched Recipe Searching and Planning Web app using Next.js, Tailwind CSS, and so on listed below.
           </p>
+          <div className="flex gap-3">
+            <Link href="https://rna-project.netlify.app" className="flex gap-1 underline">
+              <p className="text-blue-500 dark:text-neutral-600 text-xs md:text-sm font-normal mb-4">RNA</p>
+              <ArrowUpRight width={15} height={15} className="items-center justify-center"/>
+            </Link>      
+         </div>
+
           <div className="mb-6">
               <Badge variant="outline">Next.js</Badge>
               <Badge variant="outline">Tailwind CSS</Badge>
@@ -27,28 +34,28 @@ export function TimelineWork() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="/work/Portfolio-new/pic1.png"
+              src="/work/rna/pic1.png"
               alt="startup template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/work/Portfolio-new/pic2.png"
+              src="/work/rna/pic2.png"
               alt="startup template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/work/Portfolio-new/pic3.jpeg"
+              src="/work/rna/pic3.jpeg"
               alt="startup template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/work/Portfolio-new/pic4.png"
+              src="/work/rna/pic4.png"
               alt="startup template"
               width={500}
               height={500}
