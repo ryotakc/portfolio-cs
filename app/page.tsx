@@ -1,6 +1,7 @@
 import { LeoSection } from "@/components/bento-grid-home";
 import HoverBorderGradient from "@/components/hover-border-gradient";
 import PageTitle from "@/components/page-title";
+import { TerminalDemo } from "@/components/terminal-ui";
 import { FlipWords } from "@/components/ui/flip-words";
 import { SiGithub } from "@icons-pack/react-simple-icons";
 import { FileCheck } from "lucide-react";
@@ -34,6 +35,9 @@ export default function Home() {
           </div>  
         </PageTitle>
 
+        <div className="h-[410px]">
+          <TerminalDemo />
+        </div>
 
         <LeoSection />
       </div>   
